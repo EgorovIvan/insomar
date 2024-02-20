@@ -1,0 +1,195 @@
+.methods {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 12rem;
+  max-width: 90rem;
+  height: 135rem;
+
+  @media (max-width: 750px) {
+    padding-top: 3rem;
+    max-width: 23.4375rem;
+    height: 237rem
+  }
+
+  &__title {
+    margin-bottom: 4.56rem;
+    color: #25272D;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.5rem 5.5rem;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__content-title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 2rem;
+    text-align: left;
+    color: #383744;
+    font-weight: 700;
+
+    @media (max-width: 750px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__content-img {
+    position: relative;
+    margin-bottom: 3.5rem;
+    height: 20.5rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (max-width: 750px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__content:nth-child(2) .methods__content-inner:nth-child(2) .methods__content-img {
+    width: 21.625rem;
+    background: url(../../img/main/methods-1.png) no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      width: 21.4125rem;
+    }
+  }
+
+  &__content:nth-child(2) .methods__content-inner:nth-child(2) .methods__content-img:before {
+    content: 'Фокус-группы';
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  &__content:nth-child(2) .methods__content-inner:nth-child(3) .methods__content-img {
+    width: 20.8125rem;
+    background: url(../../img/main/methods-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__content:nth-child(2) .methods__content-inner:nth-child(3) .methods__content-img:before {
+    content: 'Экспертные интервью';
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  &__content:nth-child(2) .methods__content-inner:nth-child(4) .methods__content-img {
+    width: 21rem;
+    background: url(../../img/main/methods-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__content:nth-child(2) .methods__content-inner:nth-child(4) .methods__content-img:before {
+    content: 'Опросы';
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  &__content:nth-child(3) .methods__content-inner:nth-child(2) .methods__content-img {
+    width: 21.625rem;
+    background: url(../../img/main/methods-4.png) no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      width: 21.4125rem;
+    }
+  }
+
+  &__content:nth-child(3) .methods__content-inner:nth-child(2) .methods__content-img:before {
+    content: 'Психолингвистическая диагностика';
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__content:nth-child(3) .methods__content-inner:nth-child(3) .methods__content-img {
+    width: 23.5625rem;
+    background: url(../../img/main/methods-5.png) no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      width: 21.4125rem;
+    }
+  }
+
+  &__content:nth-child(3) .methods__content-inner:nth-child(3) .methods__content-img:before {
+    content: 'Контент-анализ СМИ и интернет-пространства';
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+
+    @media (max-width: 750px) {
+      top: 82%;
+    }
+  }
+
+  &__content:nth-child(3) .methods__content-inner:nth-child(4) .methods__content-img {
+    width: 21.125rem;
+    background: url(../../img/main/methods-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__content:nth-child(3) .methods__content-inner:nth-child(4) .methods__content-img:before {
+    content: 'Социальный маркетинг';
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  &__content-list {
+    padding-left: 1.2rem;
+  }
+
+  &__content-list li {
+    position: relative;
+    margin-bottom: 0.75rem;
+  }
+
+  &__content-list li::before {
+    color: #000;
+    content: "•";
+    position: absolute;
+    width: 0.375rem;
+    height: 0.375rem;
+    left: -0.8rem;
+  }
+}
+
+.methods.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+

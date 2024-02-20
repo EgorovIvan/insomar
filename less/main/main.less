@@ -1,0 +1,183 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 0 2rem 0;
+  max-width: 90rem;
+  height: 54rem;
+
+  @media (max-width: 750px) {
+    padding: 2rem 0 1rem 0;
+    max-width: 23.4375rem;
+    height: 51.5rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 36rem 41rem;
+    grid-template-rows: 36rem;
+    gap: 0.7rem;
+    margin-bottom: 7rem;
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 20rem;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__content-item:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content-item:last-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+
+    @media (max-width: 750px) {
+      align-items: center;
+      justify-content: start;
+    }
+  }
+
+  &__content-item:nth-child(2) .content-item__text {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-right: 6rem;
+    color: #E51F33;
+
+    @media (max-width: 750px) {
+      padding-right: 0;
+    }
+  }
+
+  &__content-item:nth-child(2) .content-item__text:nth-child(1)::before {
+    content: '“';
+    position: absolute;
+    top: 0.7rem;
+    left: -1rem;
+    color: #E51F33;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10%;
+    letter-spacing: -0.00906rem;
+  }
+
+  &__content-item:nth-child(2) .content-item__text:nth-child(1)::after {
+    content: '”';
+    position: absolute;
+    top: 3.8rem;
+    right: 3.5rem;
+    color: #E51F33;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10%;
+    letter-spacing: -0.00906rem;
+
+    @media (max-width: 750px) {
+      top: 3.3rem;
+      right: -2.2rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 21.9375rem;
+    height: 30.51419rem;
+    background: url(../../img/main/owl.png) no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      width: 10.96rem;
+      height: 15.25rem;
+    }
+  }
+
+  &__desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__desc-text {
+    color: var(--Neutral-4, #95A1BB);
+    font-feature-settings: 'clig' off, 'liga' off;
+    padding-right: 2rem;
+
+    @media (max-width: 750px) {
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.content-item__title {
+  margin-bottom: 2.2rem;
+  text-align: center;
+  color: #25272D;
+  line-height: 129.675%;
+
+  @media (max-width: 750px) {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.content-item__text {
+  margin-bottom: 3.6rem;
+  text-align: center;
+  color: #25272D;
+  line-height: 115%;
+
+  @media (max-width: 750px) {
+    margin-bottom: 1.4rem;
+    font-size: 0.825rem;
+  }
+}
+
+.content-item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13.3125rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background: #25272D;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.00906rem;
+
+  @media (max-width: 750px) {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.825rem;
+  }
+}

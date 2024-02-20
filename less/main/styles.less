@@ -1,0 +1,26 @@
+@import "../global";
+@import "../header";
+@import "../footer";
+@import "main";
+@import "info";
+@import "solutions";
+@import "methods";
+
+.header__list li:nth-child(1) .header__link {
+  text-decoration: underline;
+  text-decoration-color: #E63946;
+  text-underline-offset: 0.3rem;
+}
+
+body {
+  max-width: 90rem;
+  height: auto;
+  background: url(../../img/bg-body.webp) no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  @media (max-width: 750px) {
+    max-width: 23.4375rem;
+    height: auto;
+  }
+}
