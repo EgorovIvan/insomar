@@ -1,12 +1,13 @@
 .footer {
   position: relative;
   margin: 0 auto;
-  padding: 23rem 0 1rem 0;
-  max-width: 90rem;
-  height: 58.45588rem;
-  background: url(../../img/bg-footer.jpg) no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  padding: 20rem 0 1rem 0;
+  max-width: 120rem;
+  height: 63.45588rem;
+  background: url(../../img/bg.svg) no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: bottom;
 
   @media (max-width: 750px) {
     margin-top: 5rem;
@@ -20,28 +21,32 @@
   }
 
   &__img {
-    display: none;
+    position: absolute;
+    display: flex;
+    top: -7rem;
+    right: 10rem;
+    width: 43rem;
+    height: 42rem;
+    background: url(../../img/owl-footer.svg) no-repeat;
+    background-size: contain;
+    z-index: 10;
 
     @media (max-width: 750px) {
-      position: absolute;
-      display: flex;
-      top: -5.5rem;
-      left: 11rem;
+      top: -4.5rem;
+      right: 0rem;
       width: 11rem;
       height: 11rem;
-      background: url(../../img/owl.png) no-repeat;
-      background-size: cover;
-      z-index: 10;
     }
   }
 
   &__title-img {
     position: absolute;
-    top: -5.5rem;
-    left: 48.5rem;
+    top: -8.8rem;
+    right: 13.5rem;
     color: #25272D;
     line-height: 105%;
     z-index: 12;
+    white-space: nowrap;
 
     @media (max-width: 750px) {
       top: -1.3rem;

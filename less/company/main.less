@@ -1,0 +1,121 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 9rem 0 1rem 0;
+  max-width: 120rem;
+  height: 47rem;
+
+  @media (max-width: 750px) {
+    padding: 3rem 0 1rem 0;
+    max-width: 23.4375rem;
+    height: 48rem;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 1.38rem;
+    color: #E51F33;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 113.636%;
+    letter-spacing: -0.00906rem;
+
+    @media (max-width: 750px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__title::before {
+    content: 'Основан в 2004 году';
+    position: absolute;
+    left: 0.2rem ;
+    bottom: -2rem;
+    color: #7E7E84;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 81.25%;
+    letter-spacing: -0.00906rem;
+
+    @media (max-width: 750px) {
+      font-size: 0.85rem;
+    }
+  }
+
+  &__title-img {
+    position: absolute;
+    top: 0;
+    left: 27rem;
+    width: 13.25rem;
+    height: 18.375rem;
+    background: url(../../img/company/owl.svg) no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+    @media (max-width: 750px) {
+      left: 14.3rem;
+      width: 7.07rem;
+      height: 10rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+  }
+
+  &__info-title {
+    position: relative;
+    margin-right: 0.5rem;
+    color: #E51F33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (max-width: 750px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__info-text {
+    width: 16.1rem;
+    align-self: center;
+    color: #8f9397;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+
+  &__info-text:last-child {
+    width: 13.1rem;
+  }
+
+  &__text {
+    color: #8f9397;
+  }
+
+  &__text span {
+    color: #E51F33;
+  }
+}
+
+.main .container {
+  display: grid;
+  grid-template-columns: 1fr 23rem;
+  gap: 6.5rem 2rem;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+}
+

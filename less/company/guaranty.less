@@ -1,0 +1,90 @@
+.guaranty {
+  position: relative;
+  margin: 0 auto;
+  padding: 9rem 0 1rem 0;
+  max-width: 120rem;
+  height: 66rem;
+
+  @media (max-width: 750px) {
+    padding: 3rem 0 1rem 0;
+    max-width: 23.4375rem;
+    height: 157rem;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    color: #383744;
+
+    @media (max-width: 750px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__img {
+    justify-self: center;
+    margin-bottom: 3.3rem;
+    width: 18.1875rem;
+    height: 28.1875rem;
+
+    @media (max-width: 750px) {
+      margin-bottom: 2.3rem;
+    }
+  }
+
+  &__item:nth-child(2) .guaranty__img {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+    background: url(../../img/company/image-1.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(3) .guaranty__img {
+    background: url(../../img/company/image-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(4) .guaranty__img {
+    background: url(../../img/company/image-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(5) .guaranty__img {
+    background: url(../../img/company/image-4.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__text {
+    width: 18.1875rem;
+    color: #8f9397;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.guaranty .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
