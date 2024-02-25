@@ -1,0 +1,67 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5rem 0 2.7rem 0;
+  max-width: 90rem;
+  height: 39rem;
+
+  @media (max-width: 750px) {
+    padding: 0.5rem 0 1rem 0;
+    max-width: 23.4375rem;
+    height: 25rem;
+  }
+
+  &__img {
+    margin-bottom: 2.5rem;
+    width: 81.5625rem;
+    height: 20.3125rem;
+    background: url(../../img/marketing/main.png) no-repeat;
+    background-size: cover;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1.2rem;
+      width: 21.4125rem;
+      height: 5.3455rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    width: 48rem;
+    color: var(--Text, #363940);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    color: #363940;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text span {
+    color: #E51F33;
+  }
+
+  &__link {
+    color: #E51F33;
+    text-transform: uppercase;
+  }
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}

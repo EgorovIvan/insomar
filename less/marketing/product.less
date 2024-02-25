@@ -1,0 +1,102 @@
+.product {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 9rem;
+  max-width: 120rem;
+  height: 38rem;
+
+  @media (max-width: 750px) {
+    padding-top: 3rem;
+    max-width: 23.4375rem;
+    height: 45rem;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 10rem;
+
+    @media (max-width: 750px) {
+      padding-left: 6rem;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 0;
+    left: 4rem;
+    color: #AFAFAF;
+
+    @media (max-width: 750px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 0;
+      left: 2rem;
+    }
+  }
+
+  &__item:nth-child(1)::before {
+    background: url(../../img/marketing/icon-1.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(2)::before {
+    background: url(../../img/marketing/icon-2.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(3)::before {
+    background: url(../../img/marketing/icon-3.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(4)::before {
+    background: url(../../img/marketing/icon-4.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(5)::before {
+    background: url(../../img/marketing/icon-5.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(6)::before {
+    background: url(../../img/marketing/icon-6.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item-title {
+    margin-bottom: 1rem;
+  }
+
+  &__item-details {
+    position: relative;
+    color: #E51F33;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+
+    @media (max-width: 750px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.product .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

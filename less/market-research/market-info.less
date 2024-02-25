@@ -1,0 +1,103 @@
+.market-info {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 120rem;
+  height: 63rem;
+
+  @media (max-width: 750px) {
+    padding-top: 3rem;
+    max-width: 23.4375rem;
+    height: 91rem;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 6rem;
+    padding-left: 6rem;
+
+    @media (max-width: 750px) {
+      padding-top: 4rem;
+      padding-left: 4rem;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 6rem;
+    left: 0rem;
+    color: #AFAFAF;
+
+    @media (max-width: 750px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 4rem;
+      left: 0rem;
+    }
+  }
+
+  &__item:nth-child(1)::before {
+    background: url(../../img/market-research/icon-1.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(2)::before {
+    background: url(../../img/market-research/icon-2.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(4)::before {
+    background: url(../../img/market-research/icon-3.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(5)::before {
+    background: url(../../img/market-research/icon-4.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__item-img {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 30rem;
+    height: 46rem;
+    background: url(../../img/market-research/image-1.png) no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      width: 20rem;
+      height: 30rem;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 1rem;
+  }
+
+  &__item-text {
+
+  }
+}
+
+.market-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 30rem;
+  gap: 2rem;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
