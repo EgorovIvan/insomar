@@ -33,6 +33,7 @@
   }
 
   &__img {
+    position: relative;
     justify-self: center;
     margin-bottom: 3.3rem;
     width: 18.1875rem;
@@ -43,6 +44,16 @@
     }
   }
 
+  &__img-text {
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    width: 15rem;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &__item:nth-child(2) .guaranty__img {
     align-self: center;
     align-items: center;
@@ -51,6 +62,9 @@
 
     background: url(../../img/company/image-1.png) no-repeat;
     background-size: contain;
+  }
+
+  &__item:nth-child(2) .guaranty__img::before {
   }
 
   &__item:nth-child(3) .guaranty__img {
