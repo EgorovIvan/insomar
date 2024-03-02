@@ -13,12 +13,52 @@
 
   &__img {
     position: absolute;
-    top: 15rem;
-    right: 5rem;
-    width: 22rem;
-    height: 30rem;
+    top: 10rem;
+    right: 0rem;
+    width: 43rem;
+    height: 42rem;
     background: url(../../img/contacts/owl.svg) no-repeat;
     background-size: contain;
+
+    @media (max-width: 750px) {
+      top: 9.6rem;
+      right: 0rem;
+      width: 11rem;
+      height: 11rem;
+    }
+  }
+
+  &__title-img {
+    position: absolute;
+    top: 29rem;
+    right: 22.5rem;
+    color: #25272D;
+    line-height: 105%;
+    z-index: 12;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      top: 14.6rem;
+      right: 4rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__title-img span {
+    color: #25272D;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 178.571%;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      top: -2rem;
+      left: 12.5rem;
+      font-size: 0.4rem;
+    }
   }
 
   &__text {
