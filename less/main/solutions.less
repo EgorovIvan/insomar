@@ -8,7 +8,7 @@
   @media (max-width: 750px) {
     padding-top: 3rem;
     max-width: 23.4375rem;
-    height: 68rem;
+    height: 88rem;
   }
 
   &__title {
@@ -27,10 +27,14 @@
 
   &__item {
     position: relative;
+    display: flex;
+    align-self: center;
+    height: 5.8rem;
   }
 
   &__item p {
     position: relative;
+    align-self: center;
   }
 
   &__item:nth-child(2) {
@@ -55,7 +59,7 @@
   &__item:nth-child(2) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -1rem;
     right: -8rem;
     width:  5.6875rem;
     height: 5.75rem;
@@ -63,15 +67,16 @@
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: -0.2rem;
+      left: -4.5rem;
+      width: 3.8rem;
+      height: 3.8rem;
     }
   }
 
   &__item:nth-child(3) {
     justify-self: start;
-    margin-left: 10rem;
+    margin-left: 9.5rem;
 
     @media (max-width: 750px) {
       margin-left: 5.5rem;
@@ -85,24 +90,26 @@
   &__item:nth-child(3) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -1rem;
     left: -8rem;
-    width: 6.8rem;
-    height: 6.8rem;
+    width: 6.6rem;
+    height: 6.6rem;
     background: url(../../img/main/icon-2.svg) no-repeat;
     background-size: cover;
     background-position-y: -0.4rem;
 
     @media (max-width: 750px) {
+      top: -0.3rem;
       left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      background-position-y: -0.2rem;
     }
   }
 
   &__item:nth-child(4) {
     justify-self: end;
-    margin-right: 18rem;
+    margin-right: 16rem;
 
     @media (max-width: 750px) {
       justify-self: start;
@@ -122,23 +129,24 @@
   &__item:nth-child(4) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 0rem;
     right: -8rem;
-    width: 5.6875rem;
-    height: 5.75rem;
+    width: 5.55rem;
+    height: 5.55rem;
     background: url(../../img/main/icon-3.svg) no-repeat;
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: 0.3rem;
+      left: -4.5rem;
+      width: 3.8rem;
+      height: 3.8rem;
     }
   }
 
   &__item:nth-child(5) {
     justify-self: start;
-    margin-left: 18rem;
+    margin-left: 16rem;
 
     @media (max-width: 750px) {
       margin-left: 5.5rem;
@@ -152,7 +160,7 @@
   &__item:nth-child(5) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.8rem;
     left: -8rem;
     width: 7.2rem;
     height: 7.2rem;
@@ -161,9 +169,11 @@
     background-position-y: -0.5rem;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: -0.35rem;
+      left: -4.9rem;
+      width: 4.8rem;
+      height: 4.8rem;
+      background-position-y: -0.1rem;
     }
   }
 
@@ -189,7 +199,7 @@
     text-align: center;
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
 
     @media (max-width: 750px) {
@@ -210,13 +220,14 @@
     position: absolute;
     top: 0;
     right: -8rem;
-    width: 5.6875rem;
-    height: 5.75rem;
+    width: 5.8rem;
+    height: 5.8rem;
     background: url(../../img/main/icon-5.svg) no-repeat;
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
+      top: 0.3rem;
+      left: -4.55rem;
       width: 4rem;
       height: 4.1rem;
     }
@@ -224,7 +235,7 @@
 
   &__item:nth-child(7) {
     justify-self: start;
-    margin-left: 21rem;
+    margin-left: 22rem;
 
     @media (max-width: 750px) {
       margin-left: 5.5rem;
@@ -242,7 +253,7 @@
     text-align: center;
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
 
     @media (max-width: 750px) {
@@ -265,15 +276,16 @@
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: 0.6rem;
+      left: -4.45rem;
+      width: 3.8rem;
+      height: 3.8rem;
     }
   }
 
   &__item:nth-child(8) {
     justify-self: end;
-    margin-right: 18rem;
+    margin-right: 16rem;
 
     @media (max-width: 750px) {
       justify-self: start;
@@ -293,23 +305,24 @@
   &__item:nth-child(8) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.6rem;
     right: -8rem;
-    width: 5.68rem;
-    height: 5.7rem;
+    width: 5.4rem;
+    height: 5.4rem;
     background: url(../../img/main/icon-7.svg) no-repeat;
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: -0.2rem;
+      left: -4.4rem;
+      width: 3.8rem;
+      height: 3.8rem;
     }
   }
 
   &__item:nth-child(9) {
     justify-self: start;
-    margin-left: 18rem;
+    margin-left: 16.5rem;
 
     @media (max-width: 750px) {
       margin-bottom: 1rem;
@@ -324,23 +337,24 @@
   &__item:nth-child(9) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -1.45rem;
     left: -8rem;
-    width: 6.3rem;
-    height: 6.3rem;
+    width: 6.15rem;
+    height: 6.15rem;
     background: url(../../img/main/icon-8.svg) no-repeat;
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: -0.7rem;
+      left: -4.6rem;
+      width: 4.2rem;
+      height: 4.2rem;
     }
   }
 
   &__item:nth-child(10) {
     justify-self: end;
-    margin-right: 10rem;
+    margin-right: 9.5rem;
 
     @media (max-width: 750px) {
       justify-self: start;
@@ -360,23 +374,24 @@
   &__item:nth-child(10) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.7rem;
     right: -8rem;
-    width: 6.4rem;
-    height: 6.4rem;
+    width: 6.25rem;
+    height: 6.25rem;
     background: url(../../img/main/icon-9.svg) no-repeat;
     background-size: contain;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: 0;
+      left: -4.55rem;
+      width: 4.2rem;
+      height: 4.2rem;
     }
   }
 
   &__item:nth-child(11) {
     justify-self: start;
-    margin-left: 10rem;
+    margin-left: 8.5rem;
 
     @media (max-width: 750px) {
       margin-left: 5.5rem;
@@ -390,18 +405,20 @@
   &__item:nth-child(11) p::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.7rem;
     left: -8rem;
-    width: 9.3rem;
-    height: 9.3rem;
+    width: 8.8rem;
+    height: 8.8rem;
     background: url(../../img/main/icon-10.svg) no-repeat;
     background-size: contain;
     background-position-y: -0.8rem;
 
     @media (max-width: 750px) {
-      left: -5rem;
-      width: 4rem;
-      height: 4.1rem;
+      top: -0.2rem;
+      left: -5.3rem;
+      width: 6rem;
+      height: 6rem;
+      background-position-y: 0;
     }
   }
 

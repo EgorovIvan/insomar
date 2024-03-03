@@ -1,0 +1,180 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 21rem 0 1rem 0;
+  max-width: 120rem;
+  height: 80rem;
+
+  @media (max-width: 750px) {
+    padding: 3rem 0 1rem 0;
+    max-width: 23.4375rem;
+    height: 33rem;
+  }
+
+  &__img {
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+    width: 43rem;
+    height: 42rem;
+    background: url(../../img/contacts/owl-old.svg) no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      top: 9.6rem;
+      right: 0rem;
+      width: 11rem;
+      height: 11rem;
+    }
+  }
+
+  &__title-img {
+    position: absolute;
+    top: 29rem;
+    right: 22.5rem;
+    color: #25272D;
+    line-height: 105%;
+    z-index: 12;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      top: 14.6rem;
+      right: 4rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__title-img span {
+    color: #25272D;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 178.571%;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      top: -2rem;
+      left: 12.5rem;
+      font-size: 0.4rem;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: 1.6rem;
+    width: 28.8rem;
+    text-align: center;
+    color: #E51F33;
+    font-size: 1.6875rem;
+    line-height: 115%;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1rem;
+      width: 80%;
+      font-size: 0.825rem;
+    }
+  }
+
+  &__text:nth-child(2) {
+    margin-bottom: 14rem;
+    right: 2rem;
+    text-align: right;
+
+    @media (max-width: 750px) {
+      margin-bottom: 4rem;
+      font-size: 0.825rem;
+    }
+  }
+
+  &__text:nth-child(1)::before {
+    content: '“';
+    position: absolute;
+    top: 1.5rem;
+    left: -1rem;
+    color: #E51F33;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10%;
+    letter-spacing: -0.00906rem;
+
+    @media (max-width: 750px) {
+      top: 0.9rem;
+      left: 1rem;
+      font-size: 4rem;
+    }
+  }
+
+  &__text:nth-child(1)::after {
+    content: '”';
+    position: absolute;
+    top: 4.2rem;
+    right: -1.8rem;
+    color: #E51F33;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10%;
+    letter-spacing: -0.00906rem;
+
+    @media (max-width: 750px) {
+      top: 2.5rem;
+      right: 0.2rem;
+      font-size: 4rem;
+    }
+  }
+
+  &__tel {
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: left;
+    justify-self: start;
+    color: #383744;
+    font-size: 2rem;
+
+    @media (max-width: 750px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__contact-text {
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: left;
+    justify-self: start;
+    color: #383744;
+  }
+
+  &__contact-telegram {
+    position: relative;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    width: 100%;
+    text-align: left;
+    justify-self: start;
+    color: #868686;
+  }
+
+  &__contact-telegram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    width: 1.6875rem;
+    height: 1.6875rem;
+    background: url(../../img/contacts/telegram.svg) no-repeat;
+    background-size: contain;
+  }
+}
+
+.main .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
