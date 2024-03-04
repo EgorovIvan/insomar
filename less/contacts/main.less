@@ -87,7 +87,7 @@
     font-size: 2rem;
 
     @media (max-width: 750px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
@@ -97,6 +97,10 @@
     text-align: left;
     justify-self: start;
     color: #383744;
+
+    @media (max-width: 750px) {
+      font-size: 1rem;
+    }
   }
 
   &__contact-telegram {
@@ -107,17 +111,25 @@
     text-align: left;
     justify-self: start;
     color: #868686;
+
+    @media (max-width: 750px) {
+      font-size: 1rem;
+    }
   }
 
   &__contact-telegram::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.1rem;
     left: 0rem;
     width: 1.6875rem;
     height: 1.6875rem;
     background: url(../../img/contacts/telegram.svg) no-repeat;
     background-size: contain;
+
+    @media (max-width: 750px) {
+      top: -0.25rem;
+    }
   }
 
   &__content {
