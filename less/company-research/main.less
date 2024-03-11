@@ -1,0 +1,54 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.5rem 0 2.7rem 0;
+  max-width: 90rem;
+  min-height: 5rem;
+
+  @media (max-width: 750px) {
+    padding: 0.5rem 0 1rem 0;
+    max-width: 23.4375rem;
+    min-height: 4rem;
+  }
+
+  &__img {
+    margin-bottom: 1.2rem;
+    width: 81.5625rem;
+    height: 20.3125rem;
+    background: url(../../img/company-research/main.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: -8.5rem;
+
+    @media (max-width: 750px) {
+      width: 21.4125rem;
+      height: 5.3455rem;
+    }
+  }
+
+  &__title {
+    margin-top: 1.5rem ;
+    margin-bottom: 1.5rem;
+    width: 48rem;
+    color: var(--Text, #363940);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    color: #363940;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}

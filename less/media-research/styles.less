@@ -1,0 +1,25 @@
+@import "../global";
+@import "../header";
+@import "../footer";
+@import "breadcrumbs";
+@import "main";
+@import "media-research";
+
+.header__list li:nth-child(4) .header__link {
+  text-decoration: underline;
+  text-decoration-color: #E63946;
+  text-underline-offset: 0.3rem;
+}
+
+body {
+  max-width: 120rem;
+  height: auto;
+  background: url(../../img/bg-body.svg) no-repeat;
+  background-size: cover;
+
+  @media (max-width: 750px) {
+    max-width: 23.4375rem;
+    height: auto;
+  }
+}
+
