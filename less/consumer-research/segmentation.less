@@ -1,15 +1,15 @@
-.socio-economic {
+.segmentation {
 
   position: relative;
   margin: 0 auto;
   padding-top: 6rem;
   max-width: 120rem;
-  height: 77rem;
+  min-height: 24rem;
 
   @media (max-width: 750px) {
     padding-top: 3rem;
     max-width: 23.4375rem;
-    height: 145rem;
+    min-height: 22rem;
   }
 
   &__title {
@@ -31,7 +31,7 @@
     font-size: 1.5rem;
 
     @media (max-width: 750px) {
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
   }
 
@@ -39,14 +39,14 @@
     margin-bottom: 2rem;
     text-align: left;
     line-height: 113%;
-
-    @media (max-width: 750px) {
-      font-size: 0.875rem;
-    }
   }
 
   &__text span {
-    color: #E51F33;;
+    color: #B22222;
+  }
+
+  &__text a {
+    font-weight: 500;
   }
 
   &__list li {
@@ -73,36 +73,10 @@
   }
 }
 
-.socio-economic .container{
+.segmentation .container{
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
 }
 
-
-td {
-  padding: 1rem 1rem 0 1rem;
-
-  @media (max-width: 750px) {
-    padding: 0.4rem 0.4rem 0 0.4rem;
-  }
-}
-
-table, td, th {
-  border-collapse: collapse;
-  border: 1px solid #343a40;
-}
-
-.column1 {
-  min-width: 12rem;
-
-  @media (max-width: 750px) {
-    min-width: 3rem;
-  }
-}
-
-td .socio-economic__text,
-td .socio-economic__subtitle {
-  margin-bottom: 1rem;
-}
