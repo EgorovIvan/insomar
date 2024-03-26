@@ -4,12 +4,12 @@
   margin: 0 auto;
   padding-top: 6rem;
   max-width: 120rem;
-  height: 302rem;
+  min-height: 180rem;
 
   @media (max-width: 750px) {
     padding-top: 3rem;
     max-width: 23.4375rem;
-    height: 505rem;
+    min-height:250rem;
   }
 
   &__title {
@@ -35,10 +35,18 @@
     }
   }
 
+  &__subtitle span {
+    text-decoration: underline;
+  }
+
   &__text {
     margin-bottom: 2rem;
     text-align: left;
     line-height: 113%;
+  }
+
+  &__text span {
+    text-decoration: underline;
   }
 
   &__list li {
