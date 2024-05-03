@@ -26,11 +26,14 @@
   <link rel="stylesheet" href="fonts/Inter.css">
 
   <!-- scripts -->
+  <link href="js/owl-carousel/dist/assets/owl.carousel.min.css" rel="stylesheet preload" as="style" type="text/css">
+  <script defer src="js/owl-carousel/dist/owl.carousel.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/less"></script>
   <script defer src="js/main.js"></script>
   <script defer src="js/hamburger-menu.js"></script>
   <script defer src="js/jquery.paginate.js"></script>
+  <script defer src="js/slider-carousel-news.js"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -82,45 +85,83 @@
     </div>
   </div>
 </main>
-<section class="news">
+<section class="news" id="news">
   <div class="container">
     <div class="news__title">
       НОВОСТИ
     </div>
-    <div class="news__content">
-      <div class="news__item">
-        <div class="news__item-img"></div>
-        <div class="news__item-title">Онлайн социология</div>
-        <div class="news__item-text">
-          Анализ социальных сетей и поисковых запросов
+    <div class="news__slider">
+      <div class="news__content  owl-carousel owl-theme">
+        <div class="news__item">
+          <div class="news__item-img"></div>
+          <div class="news__item-title">Онлайн социология</div>
+          <div class="news__item-text">
+            Анализ социальных сетей и поисковых запросов
+          </div>
+          <div class="news__item-link">
+            <a class="news__item-details" href="#">Подробнее</a>
+            <p class="news__item-date">12.04.2024</p>
+          </div>
         </div>
-        <div class="news__item-link">
-          <a class="news__item-details" href="#">Подробнее</a>
-          <p class="news__item-date">12.04.2024</p>
-        </div>
-      </div>
 
-      <div class="news__item">
-        <div class="news__item-img"></div>
-        <div class="news__item-title">Онлайн социология</div>
-        <div class="news__item-text">
-          Анализ социальных сетей и поисковых запросов
+        <div class="news__item">
+          <div class="news__item-img"></div>
+          <div class="news__item-title">Онлайн социология</div>
+          <div class="news__item-text">
+            Анализ социальных сетей и поисковых запросов
+          </div>
+          <div class="news__item-link">
+            <a class="news__item-details" href="#">Подробнее</a>
+            <p class="news__item-date">12.04.2024</p>
+          </div>
         </div>
-        <div class="news__item-link">
-          <a class="news__item-details" href="#">Подробнее</a>
-          <p class="news__item-date">12.04.2024</p>
-        </div>
-      </div>
 
-      <div class="news__item">
-        <div class="news__item-img"></div>
-        <div class="news__item-title">Онлайн социология</div>
-        <div class="news__item-text">
-          Анализ социальных сетей и поисковых запросов
+        <div class="news__item">
+          <div class="news__item-img"></div>
+          <div class="news__item-title">Онлайн социология</div>
+          <div class="news__item-text">
+            Анализ социальных сетей и поисковых запросов
+          </div>
+          <div class="news__item-link">
+            <a class="news__item-details" href="#">Подробнее</a>
+            <p class="news__item-date">12.04.2024</p>
+          </div>
         </div>
-        <div class="news__item-link">
-          <a class="news__item-details" href="#">Подробнее</a>
-          <p class="news__item-date">12.04.2024</p>
+
+        <div class="news__item">
+          <div class="news__item-img"></div>
+          <div class="news__item-title">Онлайн социология</div>
+          <div class="news__item-text">
+            Анализ социальных сетей и поисковых запросов
+          </div>
+          <div class="news__item-link">
+            <a class="news__item-details" href="#">Подробнее</a>
+            <p class="news__item-date">12.04.2024</p>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <div class="news__item-img"></div>
+          <div class="news__item-title">Онлайн социология</div>
+          <div class="news__item-text">
+            Анализ социальных сетей и поисковых запросов
+          </div>
+          <div class="news__item-link">
+            <a class="news__item-details" href="#">Подробнее</a>
+            <p class="news__item-date">12.04.2024</p>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <div class="news__item-img"></div>
+          <div class="news__item-title">Онлайн социология</div>
+          <div class="news__item-text">
+            Анализ социальных сетей и поисковых запросов
+          </div>
+          <div class="news__item-link">
+            <a class="news__item-details" href="#">Подробнее</a>
+            <p class="news__item-date">12.04.2024</p>
+          </div>
         </div>
       </div>
     </div>
@@ -139,7 +180,8 @@
           Электоральный консалтинг
         </div>
         <div class="product__item-text">
-          Позиционирование образа кандидата. Электоральный запрос. Инструменты мобилизации сторонников. Тестирование АПМ.
+          Позиционирование образа кандидата. Электоральный запрос. Инструменты мобилизации сторонников. Тестирование
+          АПМ.
         </div>
         <div class="product__item-img"></div>
       </div>
@@ -210,7 +252,8 @@
           Коммуникационный консалтинг
         </div>
         <div class="product__item-text">
-          Медиаобраз и критерии его оценки. Соответствие лексики и формата сообщений восприятию целевой аудитории. Антикризис. Экспертиза.
+          Медиаобраз и критерии его оценки. Соответствие лексики и формата сообщений восприятию целевой аудитории.
+          Антикризис. Экспертиза.
         </div>
       </div>
     </div>
@@ -227,7 +270,8 @@
           Полный цикл работ
         </div>
         <div class="advantages__item-text">
-          От разработки методики и создания программы исследования до аналитики с практическими рекомендациями и стратегии.
+          От разработки методики и создания программы исследования до аналитики с практическими рекомендациями
+          и стратегии.
         </div>
       </div>
 
@@ -245,7 +289,8 @@
           Контроль качества
         </div>
         <div class="advantages__item-text">
-          Собственная система контроля качества работы интервьюеров обеспечивает соблюдение методики и достоверность данных.
+          Собственная система контроля качества работы интервьюеров обеспечивает соблюдение методики и достоверность
+          данных.
         </div>
       </div>
 
@@ -263,7 +308,8 @@
           Профессиональное ПО
         </div>
         <div class="advantages__item-text">
-          Используем современное программное обеспечение QUIZER для проведения опросов, что гарантирует оперативность и точность результатов.
+          Используем современное программное обеспечение QUIZER для проведения опросов, что гарантирует оперативность
+          и точность результатов.
         </div>
       </div>
 
@@ -273,120 +319,51 @@
           Лучшие модераторы
         </div>
         <div class="advantages__item-text">
-          Для проведения фокус-групп и экспертных интервью в штате компании опытные модераторы. Мы всегда сами выезжаем в регионы для координации работ и обеспечения высокого качества исследования.
+          Для проведения фокус-групп и экспертных интервью в штате компании опытные модераторы. Мы всегда сами выезжаем
+          в регионы для координации работ и обеспечения высокого качества исследования.
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--<section class="methods">-->
-<!--    <div class="container">-->
-<!--        <h2 class="methods__title">МЕТОДЫ</h2>-->
-<!--        <div class="methods__content">-->
-<!--            <h2 class="methods__content-title">Классические методики</h2>-->
-<!--            <div class="methods__content-inner">-->
-<!--                <div class="methods__content-img"></div>-->
-<!--                <ul class="methods__content-list">-->
-<!--                    <li><p>Опыт работы во всех субъектах РФ</p></li>-->
-<!--                    <li><p>Лучшие модераторы, погруженные в проекты и участвующие в подготовке отчета</p></li>-->
-<!--                    <li><p>Любые целевые группы: протестные, географически удаленные и т.д.</p></li>-->
-<!--                    <li><p>Гибкий инструментарий: возможность корректировки по ситуации</p></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="methods__content-inner">-->
-<!--                <div class="methods__content-img"></div>-->
-<!--                <ul class="methods__content-list">-->
-<!--                    <li><p>Рекрут экспертов любого статуса и сферы деятельности-->
-<!--                        Компетентные </p></li>-->
-<!--                    <li><p>Компетентные модераторы</p></li>-->
-<!--                    <li><p>Собственные базы данных</p></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="methods__content-inner">-->
-<!--                <div class="methods__content-img"></div>-->
-<!--                <ul class="methods__content-list">-->
-<!--                    <li><p>Любые выборки по географии, размеру, целевым группам</p></li>-->
-<!--                    <li><p>Минимальные сроки</p></li>-->
-<!--                    <li><p>Аудиозапись интервью, GPS-контроль на планшетах</p></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="methods__content">-->
-<!--            <h2 class="methods__content-title">Междисциплинарные методики</h2>-->
-<!--            <div class="methods__content-inner">-->
-<!--                <div class="methods__content-img"></div>-->
-<!--                <ul class="methods__content-list">-->
-<!--                    <li><p>Необходима для формирования эмоционального приятия политических деятелей-->
-<!--                        — «разговор с народом на его языке»</p></li>-->
-<!--                    <li><p>Позволяет выстраивать эффективную коммуникацию по проблемным вопросам</p></li>-->
-<!--                    <li><p>Способствует формированию позитивного персонального/ группового имиджа</p></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
-<!--            <div class="methods__content-inner">-->
-<!--                <div class="methods__content-img"></div>-->
-<!--                <ul class="methods__content-list">-->
-<!--                    <li><p>Оценка состояния инфополя по заданному кругу тем</p></li>-->
-<!--                    <li><p>Характеристики доминирующих каналов коммуникации: негативная и позитивная повестка</p></li>-->
-<!--                    <li><p>Рекомендации по медиаполитике в Интернете и мессенджерах</p></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
-<!--            <div class="methods__content-inner">-->
-<!--                <div class="methods__content-img"></div>-->
-<!--                <ul class="methods__content-list">-->
-<!--                    <li><p>Карты восприятия</p></li>-->
-<!--                    <li><p>SWOT-анализ</p></li>-->
-<!--                    <li><p>Жизненный цикл политического деятеля</p></li>-->
-<!--                    <li><p>Хейтеры и промоутеры</p></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<footer class="footer">
-  <div class="footer__img"></div>
+<footer class="footer2">
+  <div class="footer2__img"></div>
   <div class="container">
-    <h2 class="footer__title-img">
-      Институт <br>
-      СОЦИАЛЬНОГО <br>
-      МАРКЕТИНГА <br>
+    <h2 class="footer2__title">
+      ИНСТИТУТ <br>
+      СОЦИАЛЬНОГО МАРКЕТИНГА <br>
       <span>Основан в 2004 году</span>
     </h2>
-    <h2 class="footer__title">
-      ИНСОМАР – ведущая российская <br>
-      исследовательская компания
-    </h2>
-    <p class="footer__subtitle">Пишите нам в телеграмм</p>
-    <div class="footer__content">
-      <div class="footer__content-item">
-        <p class="footer__text">
-          Пнд - Пт: 9:00 - 19:00 <br>
-          Сб/Вс: Закрыто
-        </p>
-        <p class="footer__text">
-          <a href="mailto:info@insomar.ru">info@insomar.ru</a>
-        </p>
-        <p class="footer__text">
-          <a href="tel:+7 (499) 409 20 62">+7 (499) 409 20 62</a>
-        </p>
-        <p class="footer__text">
-          Россия, 127051, <br>
-          г.Москва, <br>
-          ул.Петровка д.26, стр.2
-        </p>
-      </div>
-      <div class="footer__content-item">
-        <p class="footer__text">О компании</p>
-        <p class="footer__text">Статьи</p>
-        <p class="footer__text">Решения</p>
-        <p class="footer__text">Методы</p>
-        <p class="footer__text">Контакты</p>
-      </div>
+    <div class="footer2__content">
+      <p class="footer2__text">
+        <a href="company.html">О нас </a>
+      </p>
+      <p class="footer2__text">
+        <a href="solutions.html">Решения</a>
+      </p>
+      <p class="footer2__text">
+        <a href="mailto:info@insomar.ru">info@insomar.ru</a>
+      </p>
+      <p class="footer2__text">
+        <a href="#news">Новости</a>
+      </p>
+      <p class="footer2__text">
+        <a href="methods.html">Методы</a>
+      </p>
+      <p class="footer2__text">
+        <a href="tel:+7 (499) 409 20 62">+7 (499) 409 20 62</a>
+      </p>
+      <p class="footer2__text">
+        <a href="#">Остальное</a>
+      </p>
+      <p class="footer2__text">
+        <a href="contacts.html">Контакты</a>
+      </p>
+      <p class="footer2__text">
+        Россия, 127051, г.Москва, <br>
+        ул.Петровка д.26, стр.2
+      </p>
     </div>
-
   </div>
 </footer>
 </body>
