@@ -79,38 +79,87 @@
   }
 
   &__tel {
-    margin-bottom: 2rem;
-    width: 100%;
-    text-align: left;
-    justify-self: start;
-    color: #383744;
-    font-size: 2rem;
-
-    @media (max-width: 750px) {
-      font-size: 1rem;
-    }
-  }
-
-  &__contact-text {
-    margin-bottom: 2rem;
-    width: 100%;
-    text-align: left;
-    justify-self: start;
-    color: #383744;
-
-    @media (max-width: 750px) {
-      font-size: 1rem;
-    }
-  }
-
-  &__contact-telegram {
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     padding-left: 2rem;
     width: 100%;
     text-align: left;
     justify-self: start;
-    color: #868686;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #8f9397;
+
+    @media (max-width: 750px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__tel::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background: url(../../img/contacts/phone.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__contact-address,
+  &__contact-mail {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    width: 100%;
+    text-align: left;
+    justify-self: start;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #8f9397;
+
+    @media (max-width: 750px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__contact-mail::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background: url(../../img/contacts/mail.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__contact-address::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background: url(../../img/contacts/map.svg) no-repeat;
+    background-size: contain;
+  }
+
+  &__contact-telegram {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    width: 100%;
+    text-align: left;
+    justify-self: start;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #8f9397;
 
     @media (max-width: 750px) {
       font-size: 1rem;
@@ -120,15 +169,15 @@
   &__contact-telegram::before {
     content: '';
     position: absolute;
-    top: -0.1rem;
-    left: 0rem;
-    width: 1.6875rem;
-    height: 1.6875rem;
-    background: url(../../img/contacts/telegram.svg) no-repeat;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 1.875rem;
+    height: 1.875rem;
+    background: url(../../img/contacts/tg.svg) no-repeat;
     background-size: contain;
 
     @media (max-width: 750px) {
-      top: -0.25rem;
     }
   }
 
@@ -150,7 +199,7 @@
   &__content-item:first-child {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
   }
 
