@@ -6,9 +6,10 @@
   height: 55rem;
 
   @media (max-width: 750px) {
-    padding: 3rem 0 1rem 0;
+    //padding: 3rem 0 1rem 0;
+    padding: 0;
     max-width: 23.4375rem;
-    height: 110rem;
+    height: auto;
   }
 
   &__item {
@@ -16,6 +17,10 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
+
+    @media (max-width: 750px) {
+      margin: 2rem 0;
+    }
   }
 
   &__item:nth-child(1) {
