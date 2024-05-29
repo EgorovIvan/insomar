@@ -7,8 +7,24 @@
   overflow: hidden;
 
   @media (max-width: 750px) {
-    padding: 3rem 0 3rem 0;
+    padding: 18rem 0 3rem 0;
     max-width: 23.4375rem;
+  }
+
+  &__img {
+    display: none;
+
+    @media (max-width: 750px) {
+      position: absolute;
+      display: block;
+      background: url(../../img/main/owl.svg) no-repeat;
+      background-size: contain;
+      top: -5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 9rem;
+      height: 12.4rem;
+    }
   }
 
   &__title {
